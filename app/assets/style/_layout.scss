@@ -7,6 +7,9 @@
   display: flex;
   justify-content: space-between;
   padding: 30px 88px;
+  @include pad {
+    padding: 30px 40px;
+  }
   @include mobile {
     padding: 0;
     flex-direction: column;
@@ -15,8 +18,10 @@
   }
   ul {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    @include mobile {
+      flex-wrap: wrap;
+    }
     .nav-item {
       margin-left: 64px;
       @include pad {
@@ -106,7 +111,7 @@
     li{
       margin-right: 32px;
     }
-    @include mobile {
+    @include pad {
       img {
         width: 24px;
         height: 24px;

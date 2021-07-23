@@ -1,3 +1,9 @@
 .container {
-  @include container
+  @include container;
+  @include pad {
+    max-width: 690px;
+  }
+  @include mobile {
+    padding: 0 15px;
+  }
 }
