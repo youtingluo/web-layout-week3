@@ -1,5 +1,5 @@
 // header 導覽列
-// * {
+// *, *::after, *::before {
 //   outline: 1px solid black;
 // }
 .header {
@@ -7,6 +7,9 @@
   display: flex;
   justify-content: space-between;
   padding: 30px 88px;
+  a {
+    text-align: center;
+  }
   @include pad {
     padding: 30px 40px;
   }
@@ -38,6 +41,26 @@
       color: $white;
       font-size: $fs-2;
       padding: 10px;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: $white;
+        width: 0px;
+        height: 3px;
+        z-index: 5;
+        transition: .3s;
+      }
+      &:hover {
+        color: darken($white, 10%);
+        &::after {
+          width: 100%;
+        }
+      }
     }
   }
   .logo {
@@ -53,6 +76,16 @@
 }
 // footer
 .footer {
+  .nav-link {
+    transition: .3s;
+    &:hover {
+      color: $black;
+      img {
+        transition: .3s;
+        transform: scale(1.2);
+      }
+    }
+  }
   background: $primary;
   padding: 32px 0;
   .container {
@@ -73,7 +106,7 @@
     li {
       margin-right: 24px;
     }
-    a {
+    .nav-link {
       padding: 12px 24px 12px 0;
     }
     @include mobile {
@@ -110,6 +143,9 @@
     display: flex;
     li{
       margin-right: 32px;
+      @include pad {
+        margin-right: 24px;
+      }
     }
     @include pad {
       img {
