@@ -65,13 +65,11 @@ a {
 .container {
   max-width: 1110px;
   margin: 0 auto;
+  padding: 0 15px;
   width: 100%; }
   @media (max-width: 768px) {
     .container {
       max-width: 690px; } }
-  @media (max-width: 767px) {
-    .container {
-      padding: 0 15px; } }
 
 .row-reverse {
   -webkit-box-orient: horizontal;
@@ -84,6 +82,19 @@ a {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row; } }
+
+.title {
+  font-size: 3rem;
+  padding-left: 16px;
+  border-left: 8px solid #9F1213;
+  margin-bottom: 60px; }
+  @media (max-width: 768px) {
+    .title {
+      margin-bottom: 40px; } }
+  @media (max-width: 767px) {
+    .title {
+      font-size: 1.75rem;
+      margin-bottom: 24px; } }
 
 .m-0 {
   margin: 0; }
@@ -614,7 +625,7 @@ a {
         top: -2px; }
       .custom-suggest .custom-list .card h3 {
         margin-bottom: 16px;
-        font-size: 14px; }
+        font-size: 0.875rem; }
       .custom-suggest .custom-list .card .thumb {
         padding-top: 256px;
         border-radius: 4px 4px 0 0; }
@@ -648,7 +659,7 @@ a {
       .custom-suggest .custom-list .card p {
         font-size: 16px; }
       .custom-suggest .custom-list .card span {
-        font-size: 14px;
+        font-size: 0.875rem;
         color: #707070; }
 
 .contact {
@@ -710,12 +721,12 @@ a {
       display: inline-block; }
       @media (max-width: 768px) {
         .contact .form-group label {
-          font-size: 14px;
+          font-size: 0.875rem;
           display: inline; } }
     .contact .form-group input, .contact .form-group textarea {
       display: block;
       width: 100%;
-      padding: 14px 1rem;
+      padding: 0.875rem 1rem;
       font-size: 1rem; }
     .contact .form-group input[type="checkbox"] {
       width: inherit;
@@ -725,5 +736,87 @@ a {
         .contact .form-group input[type="checkbox"] {
           margin-bottom: 0;
           display: inline-block; } }
+
+.store {
+  padding: 96px 0; }
+  .store .card {
+    width: 31%;
+    margin-right: 2%;
+    border: 1px solid #00000020;
+    margin-bottom: 32px; }
+    @media (max-width: 768px) {
+      .store .card {
+        width: 48%; } }
+    @media (max-width: 767px) {
+      .store .card {
+        width: 100%;
+        margin-right: 0; } }
+  .store .card-title {
+    font-size: 1.5rem;
+    padding: 12px 24px;
+    border-bottom: 1px solid #00000020; }
+  .store .card-content {
+    font-size: 1.25rem;
+    padding: 16px 24px; }
+    .store .card-content .icon {
+      vertical-align: middle;
+      margin-right: 12px; }
+  .store .card-btn {
+    text-align: center;
+    display: block;
+    padding: 20px 0;
+    background: #000;
+    color: #fff;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    .store .card-btn:hover {
+      background: #AA0601; }
+  .store .store-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .store .form-group {
+    margin-bottom: 32px; }
+    .store .form-group label {
+      font-size: 1.5rem;
+      margin-right: 20px; }
+    .store .form-group select {
+      padding: 12px 20px;
+      font-size: 18px;
+      width: 33%; }
+
+.qa {
+  padding: 96px 0; }
+  @media (max-width: 767px) {
+    .qa {
+      padding: 28px 0; } }
+  .qa .subtitle {
+    font-size: 2rem;
+    margin-bottom: 36px; }
+    @media (max-width: 767px) {
+      .qa .subtitle {
+        font-size: 1.25rem;
+        margin-bottom: 24px; } }
+  .qa .qa-list {
+    margin-bottom: 64px; }
+    .qa .qa-list .qa-title {
+      margin-bottom: 16px;
+      font-weight: bold;
+      font-size: 1.25rem; }
+      @media (max-width: 767px) {
+        .qa .qa-list .qa-title {
+          font-size: 1rem; } }
+    .qa .qa-list .qa-item {
+      margin-bottom: 32px; }
+    .qa .qa-list .qa-content {
+      padding-left: 95px;
+      max-width: 920px; }
+      @media (max-width: 767px) {
+        .qa .qa-list .qa-content {
+          padding-left: 0;
+          font-size: 0.875rem; } }
 
 /*# sourceMappingURL=all.css.map */
