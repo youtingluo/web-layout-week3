@@ -4,6 +4,19 @@
     flex-direction: row;
   }
 }
+.title {
+  font-size: $fs-8;
+  padding-left: 16px;
+  border-left: 8px solid #9F1213;
+  margin-bottom: 60px;
+  @include pad {
+    margin-bottom: 40px;
+  }
+  @include mobile {
+    font-size: $fs-4;
+    margin-bottom: 24px;
+  }
+}
 .m-0 {
   margin: 0;
 }

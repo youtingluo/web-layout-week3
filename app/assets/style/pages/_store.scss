@@ -1,0 +1,59 @@
+// *,*::after,*::before {
+//   outline: 1px solid red;
+// }
+.store {
+  padding: 96px 0;
+  .card {
+    width: 31%;
+    margin-right: 2%;
+    border: 1px solid #00000020;
+    margin-bottom: 32px;
+    @include pad {
+      width: 48%;
+    }
+    @include mobile {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  .card-title {
+    font-size: $fs-3;
+    padding: 12px 24px;
+    border-bottom: 1px solid #00000020;
+  }
+  .card-content {
+    font-size: $fs-2;
+    padding: 16px 24px;
+    .icon {
+      vertical-align: middle;
+      margin-right: 12px;
+    }
+  }
+  .card-btn {
+    text-align: center;
+    display: block;
+    padding: 20px 0;
+    background: $black;
+    color: $white;
+    transition: .3s;
+    &:hover {
+      background: $primary;
+    }
+  }
+  .store-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-group {
+    margin-bottom: 32px;
+    label {
+      font-size: $fs-3;
+      margin-right: 20px;
+    }
+    select {
+      padding: 12px 20px;
+      font-size: 18px;
+      width: 33%;
+    }
+  }
+}

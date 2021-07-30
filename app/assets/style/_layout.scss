@@ -126,7 +126,7 @@
       height: 32px;
     }
     @include mobile {
-      font-size: $fs-1;
+      font-size: $font-base;
       .phone {
         margin-right: 6.5px;
         width: 15px;
